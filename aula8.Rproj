@@ -1,0 +1,49 @@
+---
+title: "coffee rust"
+author: Vitoria Betim
+date: 21-05-2025
+format: html
+warning: false
+message: false
+editor: visual
+---
+
+## APRESENTAÇÃO
+
+O conjunto de dados será o da ferrugem do café na Etiópia que está no arquivo de dados da nuvem.
+
+## Importando os dados
+
+Usaremos a função `gsheet2tbl()` do pacote $$gsheet$$ para carregar os dados no ambiente:
+
+```{r}
+library(gsheet)
+cr<-gsheet2tbl("https://docs.google.com/spreadsheets/d/1bq2N19DcZdtax2fQW9OHSGMR0X2__Z9T/edit?gid=1871397229#gid=1871397229")
+cr
+
+
+```
+
+## Visualizando os dados
+
+Usaremos a função `datatable()` do pacote $$DT$$
+
+```{r}
+library(DT)
+
+datatable(cr)
+```
+
+## Gráficos
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+```{r}
+library(tidyverse)
+
+cr|>
+  ggplot(aes())
+  
+
+
+```
