@@ -2,9 +2,9 @@
 title: "coffee rust"
 author: Vitoria Betim
 date: 21-05-2025
-format:
-html:
-toc: true
+format: 
+  html:
+    toc: true
 warning: false
 message: false
 editor: visual
@@ -38,7 +38,7 @@ datatable(cr)
 
 ## Gráficos
 
-The `echo: false` option disables the printing of code (only output is displayed).
+Vamos aprender como fazer e editar um mapa no R.
 
 ```{r}
 library(tidyverse)
